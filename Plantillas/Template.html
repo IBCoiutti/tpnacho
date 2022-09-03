@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La plantilla de las plantillas</title>
+</head>
+<body>
+<div>
+    <section>
+    <h1 style="color:rgb(75, 9, 9)"><strong>Familiar N°1:</strong></h1>
+    <h3 style="color:rgb(0, 87, 0)">{% for key, value in dic.items %}</h3>
+    <ul>
+    <h3 style="color:rgb(0, 87, 0)"><li>{{ key }} : {{ value }}</li></h3>
+    {% endfor %}
+    </ul>
+    </section>
+    <section>
+    <h1 style="color:black"><strong>------------------------------------------------------</strong></h1>
+    <h1 style="color:rgb(75, 9, 9)"><strong>Familiar N°2:</strong></h1>
+    <h3 style="color:rgb(0, 87, 0)">{% for key, value in dic2.items %}</h3>
+    <ul>
+    <h3 style="color:rgb(0, 87, 0)">{{ key }} : {{ value }}</h3>
+    {% endfor %}
+    </ul>
+    </section>
+    <section>
+    <h1 style="color:black"><strong>------------------------------------------------------</strong></h1>
+    <h1 style="color:rgb(75, 9, 9)"><strong>Familiar N°3:</strong></h1>
+    <h3 style="color:rgb(0, 87, 0)">{% for key, value in dic3.items %}</h3>
+    <ul>
+    <h3 style="color:rgb(0, 87, 0)">{{ key }} : {{ value }}</h3>
+    {% endfor %}
+    </ul>
+    </section>
+    <h1 style="color:black"><strong>------------------------------------------------------</strong></h1>
+</div>    
+    
+</body>
+</html>
